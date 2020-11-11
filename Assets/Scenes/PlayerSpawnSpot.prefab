@@ -43,3 +43,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e35a04dea4b89f6428691d70aa93e5d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player_prefab: {fileID: 3394919602311333833, guid: 86b0c2fdb1d36734baeb53c9e78d9c9f,
+    type: 3}
+  number_of_lives: 4
