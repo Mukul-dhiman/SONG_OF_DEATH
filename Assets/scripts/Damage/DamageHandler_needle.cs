@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DamageHandler_needle : MonoBehaviour
 {
-    public int health = 15;
+    public int health = 10;
 
 
     private void OnTriggerEnter2D()

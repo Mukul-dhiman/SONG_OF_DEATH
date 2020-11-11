@@ -120,7 +120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7926658442e78b34caf4efc3de7031ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotspeed: 180
+  rotspeed: 50
 --- !u!114 &1196280919197364576
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -133,7 +133,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78f78c7ab5c61f546861c4c99dc28c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 15
+  health: 10
 --- !u!114 &1090544076785583387
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -215,4 +215,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet_copy: {fileID: 4248922823471700702, guid: ae97b69bebc874742a62c106e9e9184f,
     type: 3}
-  fireDelay: 0.75
+  fireDelay: 3
