@@ -11,7 +11,7 @@ public class needle_loyalty : MonoBehaviour
         if(player == null)
         {
 
-            GameObject go = GameObject.Find("charles");
+            GameObject go = GameObject.FindWithTag("Player");
             if (go != null)
             {
                 player = go.transform;

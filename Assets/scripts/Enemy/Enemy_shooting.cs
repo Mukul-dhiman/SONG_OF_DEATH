@@ -17,7 +17,9 @@ public class Enemy_shooting : MonoBehaviour
             coolDownTime = fireDelay;
 
             Vector3 top_gun = transform.rotation * new Vector3(0, 0.5f, 0);
-            Instantiate(bullet_copy, transform.position + top_gun, transform.rotation);
+            Vector3 rotation = transform.rotation.eulerAngles;
+            rotation.z += 180;
+            Instantiate(bullet_copy, transform.position + top_gun, Quaternion.Euler(rotation));
         }
     }
 }
