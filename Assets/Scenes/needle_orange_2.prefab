@@ -12,10 +12,10 @@ GameObject:
   - component: {fileID: 3337048906590088454}
   - component: {fileID: 9172275851607528573}
   - component: {fileID: 2218801661795273433}
-  - component: {fileID: 2521500604636480878}
   - component: {fileID: 606483058274395830}
   - component: {fileID: 129181872725534296}
   - component: {fileID: 5640546013937399966}
+  - component: {fileID: 7642412924768890554}
   m_Layer: 8
   m_Name: needle_orange_2
   m_TagString: Untagged
@@ -121,19 +121,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotspeed: 50
---- !u!114 &2521500604636480878
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5361907752155946549}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78f78c7ab5c61f546861c4c99dc28c11, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 10
 --- !u!114 &606483058274395830
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -218,3 +205,16 @@ PolygonCollider2D:
       - {x: -0.15073931, y: -0.09808767}
       - {x: -0.10983539, y: -0.14932323}
       - {x: 0.12532938, y: -0.1519078}
+--- !u!114 &7642412924768890554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5361907752155946549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdddfdbb00e274d4090ed372b238c0ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 10

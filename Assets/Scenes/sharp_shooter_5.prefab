@@ -14,8 +14,8 @@ GameObject:
   - component: {fileID: 2636690454968844813}
   - component: {fileID: 2947682415905439835}
   - component: {fileID: 3567610588636842618}
-  - component: {fileID: 4769821037393361331}
   - component: {fileID: 7256986220489209010}
+  - component: {fileID: 3806838791669428427}
   m_Layer: 8
   m_Name: sharp_shooter_5
   m_TagString: Untagged
@@ -174,19 +174,6 @@ MonoBehaviour:
   bullet_copy: {fileID: 4248922823471700702, guid: ae97b69bebc874742a62c106e9e9184f,
     type: 3}
   fireDelay: 1
---- !u!114 &4769821037393361331
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6741935926254481008}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78f78c7ab5c61f546861c4c99dc28c11, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 50
 --- !u!114 &7256986220489209010
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -200,3 +187,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 1
+--- !u!114 &3806838791669428427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6741935926254481008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdddfdbb00e274d4090ed372b238c0ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 50

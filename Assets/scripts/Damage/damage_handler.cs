@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DamageHandler_needle : MonoBehaviour
+public class damage_handler : MonoBehaviour
 {
     public int health = 10;
 
@@ -15,7 +15,7 @@ public class DamageHandler_needle : MonoBehaviour
 
     private void Update()
     {
-        if(health <= 0)
+        if (health <= 0)
         {
             die();
         }

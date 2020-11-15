@@ -18,6 +18,7 @@ public class Enemy_Generator : MonoBehaviour
     public GameObject sharpshooter4;
     public GameObject sharpshooter5;
     public GameObject sharpshooter6;
+    public GameObject bomber;
 
     int number_of_needles;
     int current_needles_number;
@@ -28,11 +29,13 @@ public class Enemy_Generator : MonoBehaviour
     float sharp_shooter_rate = 10;
     int first_bound;
     int shooter_choice = 1;
+    bool bomber_present;
     private void Start()
     {
         number_of_needles = Random.Range(30, 50);
         first_bound = 2 * number_of_needles/3;
         current_needles_number=0;
+        bomber_present = true;
     }
     // Update is called once per frame
     void Update()
@@ -122,9 +125,16 @@ public class Enemy_Generator : MonoBehaviour
             }
             shooter_choice++;
         }
-        if (current_needles_number > number_of_needles)
+        if (current_needles_number > number_of_needles && bomber_present)
         {
             // here comes the bommber
+            bomber_present = false;
+            Vector3 offset = Random.onUnitSphere;
+
+            offset.z = 0;
+            offset = offset.normalized * enemy_spawn_distance;
+            Instantiate(bomber, transform.position + offset, Quaternion.identity);
+            Debug.Log("bomber is comming");
         }
     }
 }

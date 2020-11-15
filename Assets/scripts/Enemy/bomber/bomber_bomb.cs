@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class sharpshooter_shooting : MonoBehaviour
+public class bomber_bomb : MonoBehaviour
 {
     public GameObject bullet_copy;
     public float fireDelay = 3f;
@@ -28,7 +28,7 @@ public class sharpshooter_shooting : MonoBehaviour
         bool allow_to_shoot = true;
         if (pos.y + ship_radius > Camera.main.orthographicSize)
         {
-            allow_to_shoot=false;
+            allow_to_shoot = false;
         }
         if (pos.y - ship_radius < -Camera.main.orthographicSize)
         {
@@ -49,7 +49,7 @@ public class sharpshooter_shooting : MonoBehaviour
 
 
         coolDownTime -= Time.deltaTime;
-        if (allow_to_shoot && coolDownTime <= 0 && player != null && Vector3.Distance(transform.position, player.position) < 5)
+        if (allow_to_shoot && coolDownTime <= 0 && player != null)
         {
             Debug.Log("Shoot by sharpshooter");
             coolDownTime = fireDelay;
