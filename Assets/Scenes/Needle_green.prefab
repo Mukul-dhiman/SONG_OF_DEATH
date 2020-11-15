@@ -12,10 +12,10 @@ GameObject:
   - component: {fileID: 1196280919197364604}
   - component: {fileID: 1196280919197364606}
   - component: {fileID: 7976943775375534994}
-  - component: {fileID: 1196280919197364576}
   - component: {fileID: 1090544076785583387}
   - component: {fileID: -4210996652259905361}
   - component: {fileID: -3686498773688064645}
+  - component: {fileID: 5324050478680940884}
   m_Layer: 8
   m_Name: Needle_green
   m_TagString: Untagged
@@ -121,19 +121,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotspeed: 50
---- !u!114 &1196280919197364576
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1196280919197364605}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78f78c7ab5c61f546861c4c99dc28c11, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 10
 --- !u!114 &1090544076785583387
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -216,3 +203,16 @@ MonoBehaviour:
   bullet_copy: {fileID: 4248922823471700702, guid: ae97b69bebc874742a62c106e9e9184f,
     type: 3}
   fireDelay: 3
+--- !u!114 &5324050478680940884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1196280919197364605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdddfdbb00e274d4090ed372b238c0ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 10

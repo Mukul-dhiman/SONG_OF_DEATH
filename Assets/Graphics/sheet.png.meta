@@ -41,6 +41,9 @@ TextureImporter:
   - first:
       213: -2661919970533589962
     second: sheet_8
+  - first:
+      213: 3038985000587531000
+    second: sheet_9
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -388,7 +391,7 @@ TextureImporter:
         width: 93
         height: 84
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -409,7 +412,7 @@ TextureImporter:
         width: 93
         height: 83
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -417,6 +420,27 @@ TextureImporter:
       bones: []
       spriteID: f63e85b23fee3b244adb50077193038b
       internalID: -2661919970533589962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_9
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 842
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7911d4e2c00d9874bae5701ea8d5e16d
+      internalID: 3038985000587531000
       vertices: []
       indices: 
       edges: []
