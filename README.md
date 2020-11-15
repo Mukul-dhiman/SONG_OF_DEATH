@@ -17,16 +17,28 @@ How will enemies attack?
 	They all can move across the screen and even can hide by went off screen. And shot towards the ship with a specific power value with a certain probability to hit the ship.
 Numbers?
 •	Power of Charles- 100 stars (I am using stars as a unit of power).
+
 •	Power of Bomber- 200 stars.
+
 •	Power of Sharpshooter- 70 stars.
+
 •	Number of Sharpshooter- random between 5-10.
+
 •	Power of Needle- 15 stars.
+
 •	Number of Needles- random between 70-100.
+
 •	Power of Bomber’s bomb- 15 to 20 stars.
+
 •	Power of Charles rocket- 10 star
+
 •	Power of sharpshooter’s shot- 5 to 10 stars.
+
 •	Power of Needle’s pinch- 2 stars.
+
 •	Recovery rate of Bomber- 2 star/second.
+
 •	Recovery rate of Charles- 1.5 star/second.
+
 Motivation-
 	 There are not enough words made to describe a person’s imagination. But we can put it in our game to showcase the piece of our imagination, as large as possible. 
