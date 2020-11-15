@@ -27,7 +27,7 @@ public class Enemy_Generator : MonoBehaviour
     float enemyRate = 5;
     float sharp_shooter_rate = 10;
     int first_bound;
-    int temp_needle_choice = 1;
+    int shooter_choice = 1;
     private void Start()
     {
         number_of_needles = Random.Range(30, 50);
@@ -38,7 +38,7 @@ public class Enemy_Generator : MonoBehaviour
     void Update()
     {
         nextenemy -= Time.deltaTime;
-        if (nextenemy <= 0 && (current_needles_number<=number_of_needles) && temp_needle_choice<=6)
+        if (nextenemy <= 0 && (current_needles_number<=number_of_needles) )
         {
             current_needles_number++;
             nextenemy = enemyRate;
@@ -51,6 +51,8 @@ public class Enemy_Generator : MonoBehaviour
 
             offset.z = 0;
             offset = offset.normalized * enemy_spawn_distance;
+
+            int temp_needle_choice = Random.Range(1, 5);
             if (temp_needle_choice == 1)
             {
                 Instantiate(needle_green, transform.position + offset, Quaternion.identity);
@@ -71,10 +73,9 @@ public class Enemy_Generator : MonoBehaviour
                 Instantiate(needle_blue, transform.position + offset, Quaternion.identity);
                 Debug.Log("blue needle comming");
             }
-            temp_needle_choice++;
         }
         nextshooter -= Time.deltaTime;
-        if (nextshooter <= 0 && current_needles_number > first_bound)
+        if (nextshooter <= 0 && current_needles_number > first_bound && shooter_choice <= 6)
         {
             //here comes the sharpshooters
             current_needles_number++;
@@ -88,28 +89,28 @@ public class Enemy_Generator : MonoBehaviour
 
             offset.z = 0;
             offset = offset.normalized * enemy_spawn_distance;
-            int temp_needle_choice = Random.Range(1, 7);
-            if (temp_needle_choice == 1)
+            shooter_choice = Random.Range(1, 7);
+            if (shooter_choice == 1)
             {
                 Instantiate(sharpshooter1, transform.position + offset, Quaternion.identity);
                 Debug.Log("sharpshooter1 comming");
             }
-            else if (temp_needle_choice == 2)
+            else if (shooter_choice == 2)
             {
                 Instantiate(sharpshooter2, transform.position + offset, Quaternion.identity);
                 Debug.Log("sharpshooter2 comming");
             }
-            else if (temp_needle_choice == 3)
+            else if (shooter_choice == 3)
             {
                 Instantiate(sharpshooter3, transform.position + offset, Quaternion.identity);
                 Debug.Log("sharpshooter3 comming");
             }
-            else if (temp_needle_choice == 4)
+            else if (shooter_choice == 4)
             {
                 Instantiate(sharpshooter4, transform.position + offset, Quaternion.identity);
                 Debug.Log("sharpshooter4 comming");
             }
-            else if (temp_needle_choice == 5)
+            else if (shooter_choice == 5)
             {
                 Instantiate(sharpshooter5, transform.position + offset, Quaternion.identity);
                 Debug.Log("sharpshooter5 comming");
@@ -119,6 +120,7 @@ public class Enemy_Generator : MonoBehaviour
                 Instantiate(sharpshooter6, transform.position + offset, Quaternion.identity);
                 Debug.Log("sharpshooter6 comming");
             }
+            shooter_choice++;
         }
         if (current_needles_number > number_of_needles)
         {
