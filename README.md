@@ -4,13 +4,16 @@ Characters
 2.	Bomber the hunter- he is the main villain of the game, it’s basically want to hunt down our Charles. And will have power twice than the ship.
 3.	Shooter… Sharp-shooter- It’s an insult to the villain if he doesn’t have followers. But not in our case bomber got some help from our large group of sharpshooters, with some super powers.
 4.	Needle the pincher- They’re the blind followers of Bomber the hunter. With a special power of infinite pinching gun shots.
+
 Now we are all set and got familiar with the characters? Maybe, but we can at-least expect to see them in the journey surely.
 Main Story
 Bomber the hunter had a plan to do something evil with some not-so-evil Sharpshooters and some blind follower Needles. Now the main hero comes in the ship name’s Charles who wants to stop Bomber  from his evil idea before the time runs out.
 
 Gameplay 
+
 Background- Dark space with ocean of distant stars burning in the brightest light possible.
 Scene- Charles will be in the center of the screen with the goal to remain in the center and to die after the destruction of bomber.  
+
 Attacks- With the aim to destroy the ship. Bomber will send needles in a huge number from random direction towards the ship. And in between he will send the sharpshooters towards the ship with gun pointing directly towards the ship. And if the ship survives in the last bomber will hold the attach and try to destroy the ship.
 
 How will enemies attack?
