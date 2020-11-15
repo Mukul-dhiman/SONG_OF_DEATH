@@ -34,7 +34,7 @@ public class Bomber_chase : MonoBehaviour
             Vector3 velocity = new Vector3(0, maxSpeed * Time.deltaTime, 0);
             pos += transform.rotation * velocity;
             transform.position = pos;
-            current_center = go.transform.position;
+            current_center = transform.position-go.transform.position;
         }
         else
         {
