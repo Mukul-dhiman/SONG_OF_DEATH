@@ -41,7 +41,7 @@ public class Bomber_chase : MonoBehaviour
             count += Time.deltaTime * speed;
             var x = Mathf.Cos(count) * circumference;
             var y = Mathf.Sin(count) * circumference;
-            Vector3 targetPosition = transform.position;
+            Vector3 targetPosition = new Vector3(x, y, 0);
             transform.position = targetPosition + current_center;
         }
     }
