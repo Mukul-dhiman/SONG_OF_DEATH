@@ -18,6 +18,7 @@ public class Enemy_Generator : MonoBehaviour
     public GameObject sharpshooter4;
     public GameObject sharpshooter5;
     public GameObject sharpshooter6;
+    public GameObject bomber;
 
     int number_of_needles;
     int current_needles_number;
@@ -132,7 +133,7 @@ public class Enemy_Generator : MonoBehaviour
 
             offset.z = 0;
             offset = offset.normalized * enemy_spawn_distance;
-            Instantiate(sharpshooter6, transform.position + offset, Quaternion.identity);
+            Instantiate(bomber, transform.position + offset, Quaternion.identity);
             Debug.Log("bomber is comming");
         }
     }

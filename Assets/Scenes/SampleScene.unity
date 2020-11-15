@@ -669,6 +669,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4175628184733586375, guid: d988a258188226d40968f6fe2a9b7265,
         type: 3}
+    - target: {fileID: 2278523261058356736, guid: 8d86d972115832f4ba04acb90a22c71c,
+        type: 3}
+      propertyPath: bomber
+      value: 
+      objectReference: {fileID: 6978712875268496502, guid: 9c43f3ff5060c2f4aafc5ec9a2228770,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8d86d972115832f4ba04acb90a22c71c, type: 3}
 --- !u!1 &1707820703
