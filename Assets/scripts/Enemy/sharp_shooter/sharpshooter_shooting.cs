@@ -49,7 +49,7 @@ public class sharpshooter_shooting : MonoBehaviour
 
 
         coolDownTime -= Time.deltaTime;
-        if (allow_to_shoot && coolDownTime <= 0 && player != null && Vector3.Distance(transform.position, player.position) < 5)
+        if (allow_to_shoot && coolDownTime <= 0 && player != null)
         {
             Debug.Log("Shoot by sharpshooter");
             coolDownTime = fireDelay;
