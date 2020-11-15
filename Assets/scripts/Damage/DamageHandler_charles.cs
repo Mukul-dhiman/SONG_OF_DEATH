@@ -10,7 +10,7 @@ public class DamageHandler_charles : MonoBehaviour
     private void OnTriggerEnter2D()
     {
         Debug.Log("Trigger charles");
-        health -= 20;
+        health -= 10;
     }
 
     private void Update()

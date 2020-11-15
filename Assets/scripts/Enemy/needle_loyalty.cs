@@ -5,7 +5,7 @@ using UnityEngine;
 public class needle_loyalty : MonoBehaviour
 {
     Transform player;
-    public float rotspeed= 180f;
+    public float rotspeed= 10f;
     void Update()
     {
         if(player == null)

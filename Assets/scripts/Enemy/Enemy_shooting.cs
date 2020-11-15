@@ -5,15 +5,27 @@ using UnityEngine;
 public class Enemy_shooting : MonoBehaviour
 {
     public GameObject bullet_copy;
-    public float fireDelay = 0.75f;
+    public float fireDelay = 3f;
     float coolDownTime = 0;
+
+    Transform player;
 
     void Update()
     {
-        coolDownTime -= Time.deltaTime;
-        if ( coolDownTime <= 0)
+        if (player == null)
         {
-            Debug.Log("Shoot");
+
+            GameObject go = GameObject.FindWithTag("Player");
+            if (go != null)
+            {
+                player = go.transform;
+            }
+        }
+
+        coolDownTime -= Time.deltaTime;
+        if ( coolDownTime <= 0 && player!=null && Vector3.Distance(transform.position,player.position)<3)
+        {
+            Debug.Log("Shoot by enemy");
             coolDownTime = fireDelay;
 
             Vector3 top_gun = transform.rotation * new Vector3(0, 0.5f, 0);
