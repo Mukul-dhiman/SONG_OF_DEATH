@@ -1,3 +1,4 @@
+
 SONG OF DEATH, THE GAME
 Characters
 1.	Charles the ship- It’s a spaceship with guns and some special powers attached to it. Can move in all direction/orientation. It is the ship on which the gamer will have the controls.
@@ -45,3 +46,4 @@ Numbers?
 
 Motivation-
 	 There are not enough words made to describe a person’s imagination. But we can put it in our game to showcase the piece of our imagination, as large as possible. 
+
