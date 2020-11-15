@@ -10,7 +10,6 @@ public class Bomber_chase : MonoBehaviour
     public float circumference = 5;
     public float count = 0;
     GameObject go;
-    int direction = 1;
     bool inside = true;
 
     // Update is called once per frame

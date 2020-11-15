@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 5702213430274241080}
   - component: {fileID: 4382525807590098197}
   - component: {fileID: 4700419986136408575}
-  m_Layer: 0
+  - component: {fileID: 3513089604093649525}
+  m_Layer: 8
   m_Name: m5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26,7 +27,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5793301800859434852}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: -0.84603554, w: 0.5331265}
   m_LocalPosition: {x: 1.3721883, y: 2.3186493, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -136,3 +137,15 @@ PolygonCollider2D:
       - {x: 0.065, y: -0.13}
       - {x: 0.13499999, y: -0.099999994}
       - {x: 0.13499999, y: 0.13}
+--- !u!114 &3513089604093649525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5793301800859434852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d260f4ec40712a4bb91336f7ccebb9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
