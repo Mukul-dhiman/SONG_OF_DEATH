@@ -13,6 +13,9 @@ GameObject:
   - component: {fileID: 480007459645116112}
   - component: {fileID: 480007459645116127}
   - component: {fileID: 8699769574841960208}
+  - component: {fileID: -8473481481374477815}
+  - component: {fileID: 8775794936007625130}
+  - component: {fileID: 8169413175875307210}
   m_Layer: 8
   m_Name: bomber
   m_TagString: Untagged
@@ -167,3 +170,44 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 110
+--- !u!114 &-8473481481374477815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 480007459645116125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b6fe6463bd1274488b68017c8259340, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotspeed: 50
+--- !u!114 &8775794936007625130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 480007459645116125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3020ce26c6374244b5cf2354eb0c441, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxSpeed: 2
+  speed: 1
+  circumference: 5
+  count: 0
+--- !u!114 &8169413175875307210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 480007459645116125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6ebec873632c834cbcb4872092d6f12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
