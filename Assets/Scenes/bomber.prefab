@@ -211,3 +211,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6ebec873632c834cbcb4872092d6f12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet_copy: {fileID: 4264946054814120542, guid: 69b7b443b717259409317f0ec7014a2e,
+    type: 3}
+  fireDelay: 3

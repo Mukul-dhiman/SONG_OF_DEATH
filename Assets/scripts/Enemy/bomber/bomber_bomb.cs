@@ -55,9 +55,23 @@ public class bomber_bomb : MonoBehaviour
             coolDownTime = fireDelay;
 
             Vector3 top_gun = transform.rotation * new Vector3(0.5f, 0, 0);
+            Vector3 hor_gun = transform.rotation * new Vector3(0,0.5f, 0);
             Vector3 rotation = transform.rotation.eulerAngles;
-            Instantiate(bullet_copy, transform.position - top_gun, Quaternion.Euler(rotation));
+            Instantiate(bullet_copy, transform.position + hor_gun, Quaternion.Euler(rotation));
+            rotation.z+=180;
+            Instantiate(bullet_copy, transform.position - hor_gun, Quaternion.Euler(rotation));
+            rotation.z += 90;
             Instantiate(bullet_copy, transform.position + top_gun, Quaternion.Euler(rotation));
+            rotation.z += 180;
+            Instantiate(bullet_copy, transform.position - top_gun, Quaternion.Euler(rotation));
+            rotation.z += 45;
+            Instantiate(bullet_copy, transform.position - top_gun/2 -hor_gun/2, Quaternion.Euler(rotation));
+            rotation.z += 180;
+            Instantiate(bullet_copy, transform.position + top_gun/2 + hor_gun/2, Quaternion.Euler(rotation));
+            rotation.z += 90;
+            Instantiate(bullet_copy, transform.position + hor_gun/2 - top_gun/2, Quaternion.Euler(rotation));
+            rotation.z += 180;
+            Instantiate(bullet_copy, transform.position - hor_gun/2 + top_gun/2, Quaternion.Euler(rotation));
         }
     }
 }
