@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class metior_motion : MonoBehaviour
 {
-    float maxSpeed = Random.Range(1,5);
+    int maxSpeed = 3;
 
     // Update is called once per frame
     void Update()
