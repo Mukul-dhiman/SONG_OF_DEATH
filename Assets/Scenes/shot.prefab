@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 2363952493036097620}
   - component: {fileID: 2363952493036097621}
   - component: {fileID: 2363952493036098474}
-  - component: {fileID: 2363952493036098475}
   - component: {fileID: -7495240688633461608}
   m_Layer: 10
   m_Name: shot
@@ -146,19 +145,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 50
---- !u!114 &2363952493036098475
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2363952493036098472}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78f78c7ab5c61f546861c4c99dc28c11, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 5
 --- !u!114 &-7495240688633461608
 MonoBehaviour:
   m_ObjectHideFlags: 0

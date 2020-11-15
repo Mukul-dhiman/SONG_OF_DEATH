@@ -21,7 +21,7 @@ public class meteors_flow : MonoBehaviour
     public GameObject m14;
     public GameObject m15;
     float next_meteor = 0;
-    float meteor_rate = 0.5f;
+    float meteor_rate = 1.5f;
     // Update is called once per frame
     void Update()
     {
