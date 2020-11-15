@@ -45,7 +45,7 @@ public class Player_spawn : MonoBehaviour
 
     private void OnGUI()
     {
-        if (number_of_lives >= 0)
+        if (number_of_lives >= -1)
         {
             GUI.Label(new Rect(0, 0, 100, 50), "Lives: " + number_of_lives);
         }
