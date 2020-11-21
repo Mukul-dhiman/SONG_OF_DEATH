@@ -4,12 +4,18 @@ using UnityEngine;
 
 public class bomber_bomb : MonoBehaviour
 {
+    private AudioSource shot_audio;
     public GameObject bullet_copy;
     public float fireDelay = 3f;
     float coolDownTime = 0;
     float ship_radius = 0.5f;
 
     Transform player;
+
+    private void Start()
+    {
+        shot_audio = GetComponent<AudioSource>();
+    }
 
     void Update()
     {
@@ -57,21 +63,30 @@ public class bomber_bomb : MonoBehaviour
             Vector3 top_gun = transform.rotation * new Vector3(0.5f, 0, 0);
             Vector3 hor_gun = transform.rotation * new Vector3(0,0.5f, 0);
             Vector3 rotation = transform.rotation.eulerAngles;
+            shot_audio.Play();
             Instantiate(bullet_copy, transform.position + hor_gun, Quaternion.Euler(rotation));
             rotation.z+=180;
+            shot_audio.Play();
             Instantiate(bullet_copy, transform.position - hor_gun, Quaternion.Euler(rotation));
             rotation.z += 90;
+            shot_audio.Play();
             Instantiate(bullet_copy, transform.position + top_gun, Quaternion.Euler(rotation));
             rotation.z += 180;
+            shot_audio.Play();
             Instantiate(bullet_copy, transform.position - top_gun, Quaternion.Euler(rotation));
             rotation.z += 45;
+            shot_audio.Play();
             Instantiate(bullet_copy, transform.position - top_gun/2 -hor_gun/2, Quaternion.Euler(rotation));
             rotation.z += 180;
+            shot_audio.Play();
             Instantiate(bullet_copy, transform.position + top_gun/2 + hor_gun/2, Quaternion.Euler(rotation));
             rotation.z += 90;
+            shot_audio.Play();
             Instantiate(bullet_copy, transform.position + hor_gun/2 - top_gun/2, Quaternion.Euler(rotation));
             rotation.z += 180;
+            shot_audio.Play();
             Instantiate(bullet_copy, transform.position - hor_gun/2 + top_gun/2, Quaternion.Euler(rotation));
+            shot_audio.Play();
         }
     }
 }

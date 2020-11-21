@@ -4,12 +4,18 @@ using UnityEngine;
 
 public class sharpshooter_shooting : MonoBehaviour
 {
+    private AudioSource shot_audio;
     public GameObject bullet_copy;
     public float fireDelay = 3f;
     float coolDownTime = 0;
     float ship_radius = 0.5f;
 
     Transform player;
+
+    private void Start()
+    {
+        shot_audio = GetComponent<AudioSource>();
+    }
 
     void Update()
     {
@@ -56,7 +62,9 @@ public class sharpshooter_shooting : MonoBehaviour
 
             Vector3 top_gun = transform.rotation * new Vector3(0.5f, 0, 0);
             Vector3 rotation = transform.rotation.eulerAngles;
+            shot_audio.Play();
             Instantiate(bullet_copy, transform.position - top_gun, Quaternion.Euler(rotation));
+            shot_audio.Play();
             Instantiate(bullet_copy, transform.position + top_gun, Quaternion.Euler(rotation));
         }
     }
