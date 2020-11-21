@@ -5,6 +5,7 @@ using UnityEngine;
 public class DamageHandler_charles : MonoBehaviour
 {
     public int health = 100;
+    public AudioClip deathClip;
 
 
     private void OnTriggerEnter2D()
@@ -17,6 +18,7 @@ public class DamageHandler_charles : MonoBehaviour
     {
         if (health <= 0)
         {
+            AudioSource.PlayClipAtPoint(deathClip, transform.position);
             die();
         }
     }

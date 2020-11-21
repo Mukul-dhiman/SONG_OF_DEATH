@@ -9,11 +9,12 @@ public class Player_spawn : MonoBehaviour
     float respawntime=1;
     GameObject Player_Instance;
     public int number_of_lives = 4;
-    bool continuegame = true;
+    bool continuegame;
 
     // Start is called before the first frame update
     void Start()
     {
+        continuegame = true;
         spawn_player();
     }
 
@@ -26,32 +27,38 @@ public class Player_spawn : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    { 
+    {
 
-        if (number_of_lives < 0){
+
+        if (number_of_lives < 0)
+        {
             continuegame = false;
             Debug.Log("game end");
         }
-        if(Player_Instance == null  && continuegame)
+        if (Player_Instance == null  && continuegame)
         {
             respawntime -= Time.deltaTime;
             if (respawntime <= 0)
             {
                 spawn_player();
             }
-        }   
-      
+        }
+
     }
 
     private void OnGUI()
     {
-        if (number_of_lives > 0)
+        if (number_of_lives > -1)
         {
-            GUI.Label(new Rect(0, 0, 100, 50), "Lives: " + number_of_lives);
+            GUI.Label(new Rect(0, 0, 100, 50), "Lives Remaining: " + number_of_lives);
         }
-        else
+        if (number_of_lives == -1)
         {
-            GUI.Label(new Rect(Screen.width/2-50, Screen.height/2-50, 100, 50), "GAME OVE!!!");
+            GUI.Label(new Rect(0, 0, 100, 50), "LAST CHANCE");
+        }
+        if (!continuegame && Player_Instance==null)
+        {
+            GUI.Label(new Rect(Screen.width/2-50, Screen.height/2-50, 100, 50), "GAME OVER!!!");
         }
     }
 }
