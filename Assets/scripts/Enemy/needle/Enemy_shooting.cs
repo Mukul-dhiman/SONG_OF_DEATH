@@ -4,11 +4,17 @@ using UnityEngine;
 
 public class Enemy_shooting : MonoBehaviour
 {
+    private AudioSource shot_audio;
     public GameObject bullet_copy;
     public float fireDelay = 3f;
     float coolDownTime = 0;
 
     Transform player;
+
+    private void Start()
+    {
+        shot_audio = GetComponent<AudioSource>();
+    }
 
     void Update()
     {
@@ -31,6 +37,7 @@ public class Enemy_shooting : MonoBehaviour
             Vector3 top_gun = transform.rotation * new Vector3(0, 0.5f, 0);
             Vector3 rotation = transform.rotation.eulerAngles;
             rotation.z += 180;
+            shot_audio.Play();
             Instantiate(bullet_copy, transform.position - top_gun, Quaternion.Euler(rotation));
         }
     }
