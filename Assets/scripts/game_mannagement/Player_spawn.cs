@@ -30,7 +30,7 @@ public class Player_spawn : MonoBehaviour
     {
 
 
-        if (number_of_lives < 0)
+        if (number_of_lives < 1)
         {
             continuegame = false;
             Debug.Log("game end");
@@ -48,17 +48,21 @@ public class Player_spawn : MonoBehaviour
 
     private void OnGUI()
     {
-        if (number_of_lives > -1)
+        if (number_of_lives > 0)
         {
-            GUI.Label(new Rect(0, 0, 100, 50), "Lives Remaining: " + number_of_lives);
+            GUI.Label(new Rect(0, 0, 100, 50), "Lives Remain: " + number_of_lives);
         }
-        if (number_of_lives == -1)
+        if (number_of_lives == 0 && Player_Instance!=null)
         {
             GUI.Label(new Rect(0, 0, 100, 50), "LAST CHANCE");
         }
         if (!continuegame && Player_Instance==null)
         {
             GUI.Label(new Rect(Screen.width/2-50, Screen.height/2-50, 100, 50), "GAME OVER!!!");
+            if (GUI.Button(new Rect(Screen.width / 2 - 50, Screen.height / 2 - 20, 100, 50), "Main Menu"))
+            {
+                Application.LoadLevel("Menu");
+            }
         }
     }
 }

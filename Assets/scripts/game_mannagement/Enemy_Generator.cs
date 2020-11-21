@@ -28,10 +28,11 @@ public class Enemy_Generator : MonoBehaviour
     float enemyRate = 5;
     float sharp_shooter_rate = 10;
     int first_bound;
-    int shooter_choice = 1;
+    int shooter_choice;
     bool bomber_present;
     private void Start()
     {
+        shooter_choice = 1;
         number_of_needles = Random.Range(30, 50);
         first_bound = 2 * number_of_needles/3;
         current_needles_number=0;
@@ -135,6 +136,17 @@ public class Enemy_Generator : MonoBehaviour
             offset = offset.normalized * enemy_spawn_distance;
             Instantiate(bomber, transform.position + offset, Quaternion.identity);
             Debug.Log("bomber is comming");
+        }
+    }
+    private void OnGUI()
+    {
+        if (bomber_present==false && bomber==null)
+        {
+            GUI.Label(new Rect(Screen.width / 2 - 50, Screen.height / 2 - 50, 100, 50), "YOU WON!!!");
+            if(GUI.Button(new Rect(Screen.width / 2 - 50, Screen.height / 2 - 20, 100, 50), "Main Menu"))
+            {
+                Application.LoadLevel("Menu");
+            }
         }
     }
 }

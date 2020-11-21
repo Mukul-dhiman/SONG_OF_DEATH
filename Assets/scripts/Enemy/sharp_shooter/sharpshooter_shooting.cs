@@ -17,6 +17,8 @@ public class sharpshooter_shooting : MonoBehaviour
         shot_audio = GetComponent<AudioSource>();
     }
 
+    bool allow_to_shoot = true;
+
     void Update()
     {
         if (player == null)
@@ -31,7 +33,7 @@ public class sharpshooter_shooting : MonoBehaviour
 
 
         Vector3 pos = transform.position;
-        bool allow_to_shoot = true;
+        allow_to_shoot = true;
         if (pos.y + ship_radius > Camera.main.orthographicSize)
         {
             allow_to_shoot=false;
