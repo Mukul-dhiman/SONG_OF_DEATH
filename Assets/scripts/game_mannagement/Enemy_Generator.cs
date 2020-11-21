@@ -4,6 +4,7 @@ using System.Collections.Generic;
 // if error of policy change System.Security.Policy to System.Security
 using System.Security;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Enemy_Generator : MonoBehaviour
 {
@@ -145,7 +146,7 @@ public class Enemy_Generator : MonoBehaviour
             GUI.Label(new Rect(Screen.width / 2 - 50, Screen.height / 2 - 50, 100, 50), "YOU WON!!!");
             if(GUI.Button(new Rect(Screen.width / 2 - 50, Screen.height / 2 - 20, 100, 50), "Main Menu"))
             {
-                Application.LoadLevel("Menu");
+                SceneManager.LoadScene("Menu");
             }
         }
     }
